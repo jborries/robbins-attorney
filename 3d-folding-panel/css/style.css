@@ -46,25 +46,55 @@ header {
   /*line-height: 170px;*/
   text-align: center;
   background: #ffffff;
+  padding: 10px;
 }
 header h1 {
   font-size: 2.5rem;
   color: #363558;
 }
 .upper-header {
-    padding-top: 50px;
+   padding-top: 50px;
    font-size:2.8rem;
 }
 .lower-header{
     font-size: 2.8rem;
-    background-color: #FFFFFF;
+    background-color: #fff;
+    text-align: center;
 }
 .tagline{
     font-size: 1.8rem;
     padding-top: 20px;
     padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
     background-color: #FFFFFF;
 }
+.page-divider {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin-top: -1em;
+    margin-bottom: 1.6em;
+    font-size: 14px;
+    border-bottom-width: 2px;
+    padding-right: 10px;
+    padding-left: 2em;
+    /*margin-left: 260px;*/
+    /*margin-right: 50px;*/
+    z-index: -1;
+    position: relative;
+}
+.border-header-mobile{
+
+    border: 1px solid rgba(0,0,0,.1);
+
+}
+/*------------------------
+
+END FOR MOBILE ONLY
+
+--------------------------
+
+START TABLET & DESKTOP
+---------------------------*/
 
 @media only screen and (min-width: 600px) {
   header {
@@ -76,8 +106,20 @@ header h1 {
      font-size:3rem;
   }
   .lower-header{
-      font-size: 2.5rem;
-      background-color: #FFFFFF;
+      /*font-size: 2.5rem;
+      background-color: #ffffff;
+      margin-left: 500px;
+      margin-right: 500px;
+      text-align: center;
+      position: relative;
+      z-index: -2;
+      width: auto;*/
+      width: 300px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    margin: 0 auto;
   }
   .tagline{
       font-size: 2rem;
@@ -88,15 +130,17 @@ header h1 {
     font-size: 3rem;
   }
   .page-divider {
-    border-bottom: 1px solid rgba(0,0,0,.1);
-    line-height: 1.6em;
-    margin-top: -1.6em;
-    margin-bottom: 1.6em;
-    font-size: 14px;
-    border-bottom-width: 2px;
-    padding-right: 200px;
-    padding-left: 2em;
-    width: auto;
+      border-bottom: 1px solid rgba(0,0,0,.1);
+      margin-top: -1em;
+      margin-bottom: 1.6em;
+      font-size: 14px;
+      border-bottom-width: 2px;
+      padding-right: 10px;
+      padding-left: 2em;
+     /* margin-left: 730px; */
+     /* margin-right: 500px; */
+      z-index: 0;
+      position: relative;
 }
 }
 
